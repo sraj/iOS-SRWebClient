@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4CC95CD1ACD607800DADEB7 /* SRWebClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4CC95CC1ACD607800DADEB7 /* SRWebClient.h */; };
+		B4CC95CF1ACD607800DADEB7 /* SRWebClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CC95CE1ACD607800DADEB7 /* SRWebClient.m */; };
+		B4CC95E11ACD8D2700DADEB7 /* SRWebClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CC95E01ACD8D2700DADEB7 /* SRWebClientTests.m */; };
+		B4CC95E21ACD92EC00DADEB7 /* libiOS-SRWebClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CC95C91ACD607800DADEB7 /* libiOS-SRWebClient.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4CC95E31ACD945200DADEB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4CC95C11ACD607800DADEB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4CC95C81ACD607800DADEB7;
+			remoteInfo = "iOS-SRWebClient";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B4CC95C71ACD607800DADEB7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				B4CC95CD1ACD607800DADEB7 /* SRWebClient.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B4CC95C91ACD607800DADEB7 /* libiOS-SRWebClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libiOS-SRWebClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4CC95CC1ACD607800DADEB7 /* SRWebClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRWebClient.h; sourceTree = "<group>"; };
+		B4CC95CE1ACD607800DADEB7 /* SRWebClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRWebClient.m; sourceTree = "<group>"; };
+		B4CC95D41ACD607800DADEB7 /* iOS-SRWebClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-SRWebClientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4CC95D71ACD607800DADEB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4CC95E01ACD8D2700DADEB7 /* SRWebClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebClientTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4CC95C61ACD607800DADEB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4CC95D11ACD607800DADEB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4CC95E21ACD92EC00DADEB7 /* libiOS-SRWebClient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4CC95C01ACD607800DADEB7 = {
+			isa = PBXGroup;
+			children = (
+				B4CC95CB1ACD607800DADEB7 /* iOS-SRWebClient */,
+				B4CC95D51ACD607800DADEB7 /* iOS-SRWebClientTests */,
+				B4CC95CA1ACD607800DADEB7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4CC95CA1ACD607800DADEB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4CC95C91ACD607800DADEB7 /* libiOS-SRWebClient.a */,
+				B4CC95D41ACD607800DADEB7 /* iOS-SRWebClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4CC95CB1ACD607800DADEB7 /* iOS-SRWebClient */ = {
+			isa = PBXGroup;
+			children = (
+				B4CC95CC1ACD607800DADEB7 /* SRWebClient.h */,
+				B4CC95CE1ACD607800DADEB7 /* SRWebClient.m */,
+			);
+			path = "iOS-SRWebClient";
+			sourceTree = "<group>";
+		};
+		B4CC95D51ACD607800DADEB7 /* iOS-SRWebClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4CC95D61ACD607800DADEB7 /* Supporting Files */,
+				B4CC95E01ACD8D2700DADEB7 /* SRWebClientTests.m */,
+			);
+			path = "iOS-SRWebClientTests";
+			sourceTree = "<group>";
+		};
+		B4CC95D61ACD607800DADEB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4CC95D71ACD607800DADEB7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4CC95C81ACD607800DADEB7 /* iOS-SRWebClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4CC95DA1ACD607800DADEB7 /* Build configuration list for PBXNativeTarget "iOS-SRWebClient" */;
+			buildPhases = (
+				B4CC95C51ACD607800DADEB7 /* Sources */,
+				B4CC95C61ACD607800DADEB7 /* Frameworks */,
+				B4CC95C71ACD607800DADEB7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-SRWebClient";
+			productName = "iOS-SRWebClient";
+			productReference = B4CC95C91ACD607800DADEB7 /* libiOS-SRWebClient.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B4CC95D31ACD607800DADEB7 /* iOS-SRWebClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4CC95DD1ACD607800DADEB7 /* Build configuration list for PBXNativeTarget "iOS-SRWebClientTests" */;
+			buildPhases = (
+				B4CC95D01ACD607800DADEB7 /* Sources */,
+				B4CC95D11ACD607800DADEB7 /* Frameworks */,
+				B4CC95D21ACD607800DADEB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4CC95E41ACD945200DADEB7 /* PBXTargetDependency */,
+			);
+			name = "iOS-SRWebClientTests";
+			productName = "iOS-SRWebClientTests";
+			productReference = B4CC95D41ACD607800DADEB7 /* iOS-SRWebClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4CC95C11ACD607800DADEB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Suman Raj";
+				TargetAttributes = {
+					B4CC95C81ACD607800DADEB7 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					B4CC95D31ACD607800DADEB7 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = B4CC95C41ACD607800DADEB7 /* Build configuration list for PBXProject "iOS-SRWebClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B4CC95C01ACD607800DADEB7;
+			productRefGroup = B4CC95CA1ACD607800DADEB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4CC95C81ACD607800DADEB7 /* iOS-SRWebClient */,
+				B4CC95D31ACD607800DADEB7 /* iOS-SRWebClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4CC95D21ACD607800DADEB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4CC95C51ACD607800DADEB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4CC95CF1ACD607800DADEB7 /* SRWebClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4CC95D01ACD607800DADEB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4CC95E11ACD8D2700DADEB7 /* SRWebClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4CC95E41ACD945200DADEB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4CC95C81ACD607800DADEB7 /* iOS-SRWebClient */;
+			targetProxy = B4CC95E31ACD945200DADEB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B4CC95D81ACD607800DADEB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B4CC95D91ACD607800DADEB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4CC95DB1ACD607800DADEB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_MODULE_NAME = SRWebClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B4CC95DC1ACD607800DADEB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_MODULE_NAME = SRWebClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B4CC95DE1ACD607800DADEB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOS-SRWebClientTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B4CC95DF1ACD607800DADEB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOS-SRWebClientTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4CC95C41ACD607800DADEB7 /* Build configuration list for PBXProject "iOS-SRWebClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4CC95D81ACD607800DADEB7 /* Debug */,
+				B4CC95D91ACD607800DADEB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4CC95DA1ACD607800DADEB7 /* Build configuration list for PBXNativeTarget "iOS-SRWebClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4CC95DB1ACD607800DADEB7 /* Debug */,
+				B4CC95DC1ACD607800DADEB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4CC95DD1ACD607800DADEB7 /* Build configuration list for PBXNativeTarget "iOS-SRWebClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4CC95DE1ACD607800DADEB7 /* Debug */,
+				B4CC95DF1ACD607800DADEB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4CC95C11ACD607800DADEB7 /* Project object */;
+}
