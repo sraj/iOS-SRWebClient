@@ -39,21 +39,18 @@
 }
 
 - (NSString *) build:(NSDictionary *)reqData {
-    NSMutableArray *pairs = [NSMutableArray array];
-    
+    NSMutableArray *kvObj = [NSMutableArray array];
     for(NSString *key in [reqData keyEnumerator]) {
         NSString *value = (NSString *) [reqData objectForKey:key];
-        [pairs addObject:[NSString stringWithFormat:@"%@=%@", key, [self encodeToPercentEscapeString:value]]];
+        [kvObj addObject:[NSString stringWithFormat:@"%@=%@", key, [self encodeToPercentEscapeString:value]]];
     }
-    return [pairs componentsJoinedByString:@"&"];
+    return [kvObj componentsJoinedByString:@"&"];
 }
 
 - (NSString *) encodeToPercentEscapeString:(NSString *)value {
-    return (NSString *)
-    CFURLCreateStringByAddingPercentEscapes(NULL, (CFStringRef) value, NULL,
-                                            (CFStringRef) @"!*'();:@&=+$,/?%#[]", kCFStringEncodingUTF8);
+    return (NSString *) CFURLCreateStringByAddingPercentEscapes(NULL, (CFStringRef) value, NULL,
+                                                                (CFStringRef) @"!*'();:@&=+$,/?%#[]", kCFStringEncodingUTF8);
 }
-
 
 - (SRWebClient *) headers:(NSDictionary *) headerDict {
     if (headerDict) {
@@ -66,14 +63,12 @@
     if (dataDict && [dataDict count] > 0) {
         if (self.httpMethod && [self.httpMethod isEqualToString:@"GET"]) {
             NSString *absoluteURL = [[self.urlRequest URL] absoluteString];
-            [self.urlRequest setURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@?%@",
-                                                          absoluteURL,
+            [self.urlRequest setURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@?%@", absoluteURL,
                                                           [self build:dataDict]]]];
         }
     }
     return self;
 }
-
 
 - (SRWebClient *) send:(SuccessBlock) successBlock failure:(FailureBlock) failureBlock {
     
@@ -122,7 +117,6 @@
     [self.operationQueue addOperation:operationBlock];
     return self;
 }
-
 
 - (void) dealloc {
     [_operationQueue release]; _operationQueue = nil;
